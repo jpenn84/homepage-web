@@ -2,7 +2,7 @@
 # homepage-web
 
 Homepage for www.joshualeepenn.com
-
+Built using Vite and Sass
 
 ## License
 
@@ -11,10 +11,16 @@ Homepage for www.joshualeepenn.com
 
 ## Run Locally
 
-Run gulp task
+Run dev and open the given local webserver URL
 
 ```bash
-  gulp
+  npm run dev
 ```
 
-Open index.html in a local webserver
+## Build
+
+Run build and open the given local webserver URL
+
+```bash
+  npm run dev
+```

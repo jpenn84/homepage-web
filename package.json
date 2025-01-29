@@ -1,10 +1,13 @@
 {
   "name": "homepage-web",
   "version": "0.0.1",
+  "type": "module",
   "description": "Homepage for www.joshualeepenn.com",
-  "main": "index.js",
+  "main": "/**/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -17,9 +20,7 @@
   },
   "homepage": "https://github.com/jpenn84/homepage-web#readme",
   "devDependencies": {
-    "gulp": "^5.0.0",
-    "gulp-purgecss": "^7.0.2",
-    "gulp-sass": "^6.0.0",
-    "sass": "^1.83.4"
+    "sass": "^1.83.4",
+    "vite": "^6.0.5"
   }
 }
