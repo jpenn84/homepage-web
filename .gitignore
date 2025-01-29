@@ -1,0 +1,12 @@
+# vim swap files
+**/*.swp
+
+# SASS cache
+.sass-cache/
+**/*.css.map
+**/*.sass.map
+**/*.scss.map
+
+# Node: Do not commit package-lock.json
+# https://github.com/npm/npm/issues/20603
+package-lock.json
