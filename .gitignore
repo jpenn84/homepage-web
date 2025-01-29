@@ -7,6 +7,8 @@
 **/*.sass.map
 **/*.scss.map
 
-# Node: Do not commit package-lock.json
+# Node:
+node_modules/
+# Do not commit package-lock.json
 # https://github.com/npm/npm/issues/20603
 package-lock.json
