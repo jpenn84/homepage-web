@@ -1,1 +1,6 @@
-@use 'colors' as *;
+@use 'components' as *;
+@use 'abstract' as *;
+
+body {
+    background-color: $bg-color;
+}
