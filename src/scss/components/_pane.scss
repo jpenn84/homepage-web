@@ -1,0 +1,9 @@
+@use '../abstract' as *;
+
+.pane {
+    background: color-mix(in srgb, $lightest, transparent 40%);
+    box-shadow: 0 8px 32px 0 color-mix(in srgb, $primary-dark, transparent 66%);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid color-mix(in srgb, $lightest, transparent 92%);
+}

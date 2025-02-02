@@ -10,18 +10,16 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    background-image: linear-gradient(90deg, $primary , $primary-gradient);
     width: 100%;
     max-width: 1200px;
-    border-radius: 1em;
+    min-height: 466px;
 }
 
 %skill {
     display: flex;
-    justify-content: left;
     margin-left: 8vw;
     align-items: center;
-    color: $lightest;
+    padding-top: 0.5em;
 
     .title {
         font-weight: bold;
@@ -31,7 +29,6 @@
 }
 
 .skill-1 {
-    padding-top: 5px;
     @extend %skill;
     grid-area: 1 / 1 / 2 / 2;
 }
