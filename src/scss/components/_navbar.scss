@@ -1,53 +1,59 @@
 @use '../abstract' as *;
 
-%navbar {
-    display: block;
-    text-align: center;
-}
-
-%navlink {
+a {
     color: $lightest;
     text-decoration: none;
 }
 
-.nav {
-    margin-bottom: 1em;
-    padding: 0.2em 2em;
+nav {
     overflow: hidden;
+    display: grid;
+    margin-bottom: 1.5em;
+    padding: 0.6em 0 0.6em 2em;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
     background-color: $darkest;
+    color: $lightest;
 }
 
 .name {
-    @extend %navbar;
-    padding-top: 0.3em;
+    padding-top: 0.2em;
     float: left;
-    color: $lightest;
-    font-family: $serif;
-    font-weight: 700;
+    font-family: $typewriter;
     font-size: 1.8em;
 
+    a:hover {
+        background-image: linear-gradient(135deg, $accent, $accent-gradient);
+        color: transparent;
+        background-clip: text;
+    }
+}
+
+.portal {
+    display: inline-block;
+    margin: auto;
+    font-size: 1.4em;
+    font-family: $serif;
+
     a {
-        @extend %navlink;
+        padding: 0.4em 1em;
+
         &:hover {
-            background-image: linear-gradient(135deg, $accent, $accent-gradient);
-            color: transparent;
-            background-clip: text;
+            border: 0.1em solid $primary;
+            overflow: hidden;
         }
     }
 }
 
-.navitem {
-    @extend %navbar;
-    padding: 1em 0;
-    float: right;
+.nav-menu {
+    margin-left: auto;
 
     a {
-        @extend %navlink;
-        padding: 2em 1em;
+        padding: 1.2em 1em;
+
         &:hover {
             background-image: linear-gradient(135deg, $accent , $accent-gradient);
             color: $primary;
         }
     }
-
 }
