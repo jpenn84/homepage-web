@@ -1,0 +1,58 @@
+@use '../abstract' as *;
+
+.article {
+    display: block;
+    margin: auto;
+    margin-top: 4em;
+    max-width: 1200px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.carousel-title {
+    background-color: $darkest;
+    color: $lightest;
+    padding: 0.5em;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: scroll;
+}
+
+.card {
+    margin: 1em;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.card-image-container {
+    display: flex;
+    align-items: center;
+    max-height: 180px;
+    background-color: $lightest;
+
+    img {
+        object-fit: cover;
+        max-height: 180px;
+        
+        width: auto;
+        margin: auto;
+    }
+}
+
+.card-title {
+    @extend .carousel-title;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.card-text {
+    @extend .card-title;
+    font-size: unset;
+    font-weight: unset;
+}
