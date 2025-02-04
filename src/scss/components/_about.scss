@@ -1,0 +1,26 @@
+@use '../abstract' as *;
+
+.about {
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    padding-top: 2em;
+    padding-bottom: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+h1 {
+    text-align: center;
+}
+
+.back {
+    margin: auto;
+    width: 20%;
+    border: 1px solid $primary;
+    border-radius: 1em;
+    padding: 10px;
+    text-align: center;
+    background-color: $primary;
+    font-size: 1.25em;
+}
